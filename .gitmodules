@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = /Users/david/Developer/sideprojects/lista/api
+[submodule "website"]
+	path = website
+	url = /Users/david/Developer/sideprojects/lista/website
