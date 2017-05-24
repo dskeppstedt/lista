@@ -1,0 +1,23 @@
+version: '3'
+volumes:
+    mongodata:
+services:
+    db:
+        image: mongo
+        volumes:
+            - mongodata:/data/db
+        ports:
+            - 27017:27017
+    web:
+        build: ./server/
+        ports:
+            - 8080:8080
+        links:
+            - db
+    www:
+        build: ./www/
+        ports:
+            - 8081:80
+        volumes:
+            - ./www/src/:/usr/share/nginx/html
+
