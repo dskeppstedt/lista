@@ -8,16 +8,16 @@ services:
             - mongodata:/data/db
         ports:
             - 27017:27017
-    web:
-        build: ./server/
+    api:
+        build: ./api/
         ports:
-            - 8080:8080
+            - 8081:8080
         links:
             - db
-    www:
-        build: ./www/
+    website:
+        image: nginx
         ports:
-            - 8081:80
+            - 8080:80
         volumes:
-            - ./www/src/:/usr/share/nginx/html
+            - ./website/www/:/usr/share/nginx/html
 
