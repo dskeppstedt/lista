@@ -1,2 +1,2 @@
 #import the base data
-mongoimport --db lista --collection info --file data/info.json
+mongoimport --db lista --collection info --file "$(dirname -- "$0")"/data/info.json
