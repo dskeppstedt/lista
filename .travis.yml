@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker-compose up
+
+after_success:
+  - echo 'Success!'
+
+after_failure:
+  - echo 'Fail!'
+
