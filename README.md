@@ -12,5 +12,4 @@ This project relies on [Docker](https://www.docker.com/), make sure that you ins
 After that you should clone this repo and the submodules so that you can build and develop the application on your machine.  
 For example: `git clone --recursive -j8 git@github.com:dskeppstedt/lista.git`  
 
-Then, a simple `docker-compose up` in the root of the project should start all the services.  
-If it works you should be able to visit the application at [http://localhost:8080/](http://localhost:8080/):
+Use docker compose to bring all the service online, for example: `docker-compose up` in the root of the project. If it works you should be able to visit the application at [http://localhost:8080/](http://localhost:8080/)
