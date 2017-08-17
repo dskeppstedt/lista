@@ -20,7 +20,7 @@ before_install:
 
 script:
   - docker-compose up -d
-  - sleep 15
+  - sleep 5
   - sh db/init_db.sh
   - sh tests/smoke.sh
 
