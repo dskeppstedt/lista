@@ -10,6 +10,8 @@ services:
             - 27017:27017
     api:
         build: ./api/
+        environment:
+            - LISTA_CORS
         ports:
             - 8081:1337
         links:
