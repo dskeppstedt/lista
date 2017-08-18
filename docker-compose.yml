@@ -12,6 +12,7 @@ services:
         build: ./api/
         environment:
             - LISTA_CORS
+            - LISTA_JWT
         ports:
             - 8081:1337
         links:
